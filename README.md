@@ -1,6 +1,8 @@
 # PB-TIED : *(Password-Based Text & Image Encryption Decryption System)*
 PB-TIED is a terminal-based Python application designed for secure encryption and decryption of text and image files using password-based symmetric encryption. It leverages cryptographic standards to provide a secure, user-friendly interface for data protection.
 
+**************************************
+
 ## Key Features
 * Text Encryption & Decryption
     * Supports both direct string input and .txt files.
@@ -20,3 +22,20 @@ PB-TIED is a terminal-based Python application designed for secure encryption an
     * Menu-driven interface for ease of use.
     * Error handling for invalid inputs and missing files.
     * Clear prompts and output messages for a seamless experience.
+
+**************************************
+
+## Algorithms and Libraries Used
+
+1. SHA256
+
+2. Fernet
+
+**************************************
+
+## Libraries Used
+   * cryptography.fernet: Encryption and decryption.
+   * hashlib: SHA-256 hash function.
+   * base64: Encoding binary data.
+   * os: File and path checking.
+   * art: ASCII banner generator for UI (for displaying "PB-TIED").
