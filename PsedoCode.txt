@@ -1,0 +1,64 @@
+1.  START
+
+2.  FUNCTION main()
+3.      Show menu and get user choice
+4.      Call corresponding function (Encrypt/Decrypt Text or Image)
+5.      Loop until user exits
+6.  END FUNCTION
+
+7.  FUNCTION clear_screen(mode)
+8.      Display prompt based on mode
+9.      Clear console
+10. END FUNCTION
+
+11. FUNCTION read_text_for_encryption()
+12.     Get message and password (from input or file)
+13.     Return data
+14. END FUNCTION
+
+15. FUNCTION encrypt_text(data)
+16.     Generate key from password
+17.     Encrypt message
+18.     Save to file
+19.     Return status
+20. END FUNCTION
+
+21. FUNCTION read_text_for_decryption()
+22.     Get file and password
+23.     Return data
+24. END FUNCTION
+
+25. FUNCTION decrypt_text(data)
+26.     Load encrypted message
+27.     Decrypt using password
+28.     Save decrypted message if user agrees
+29.     Return status
+30. END FUNCTION
+
+31. FUNCTION read_image_data()
+32.     Get image file, password, and output path
+33.     Return data
+34. END FUNCTION
+
+35. FUNCTION encrypt_image(data)
+36.     Read image as bytes
+37.     Encrypt with Fernet
+38.     Save to output file
+39.     Return status
+40. END FUNCTION
+
+41. FUNCTION decrypt_image(data)
+42.     Read encrypted image
+43.     Decrypt using Fernet
+44.     Save to output file
+45.     Return status
+46. END FUNCTION
+
+47. FUNCTION generate_key(password)
+48.     Hash password with SHA-256
+49.     Encode to base64
+50.     Return key
+51. END FUNCTION
+
+52. CALL main()
+53. END
