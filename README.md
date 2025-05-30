@@ -34,8 +34,8 @@ PB-TIED is a terminal-based Python application designed for secure encryption an
 **************************************
 
 ## Libraries Used
-   * cryptography.fernet: Encryption and decryption.
-   * hashlib: SHA-256 hash function.
-   * base64: Encoding binary data.
-   * os: File and path checking.
-   * art: ASCII banner generator for UI (for displaying "PB-TIED").
+   * **cryptography.fernet** : Encryption and decryption.
+   * **hashlib** : SHA-256 hash function.
+   * **base64** : Encoding binary data.
+   * **os** : File and path checking.
+   * **art** : ASCII banner generator for UI (for displaying "PB-TIED").
