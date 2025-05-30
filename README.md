@@ -44,3 +44,9 @@ Fernet is a symmetric encryption method included in the Python cryptography pack
    * **base64** : Encoding binary data.
    * **os** : File and path checking.
    * **art** : ASCII banner generator for UI.
+
+**************************************
+
+## Liscense 
+
+Liscense under MIT License, Which is a short and permissive open-source license that allows anyone to use, modify, distribute, or even sell the software, as long as the original license and copyright notice are included. It imposes minimal restrictions and is widely used in both open-source and commercial projects. However, it provides no warranty, meaning the author is not liable for any damages caused by the software. Its simplicity and flexibility make it one of the most popular licenses in the software development community.
