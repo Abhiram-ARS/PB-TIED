@@ -1,7 +1,8 @@
 # -----------------------------------------------------------------------------
 # Title       : PB-TIED (Password-Based Text & Image Encrption-Decryption) Tool
 # Author      : https://github.com/Abhiram-ARS
-# Description : This Python-based tool provides a simple yet secure way to encrypt and decrypt messages using a password.
+# Description : This Python-based tool provides a simple yet secure way 
+#               to encrypt and decrypt messages using a password.
 # Version     : Command Line Interface - I (cli-1)
 # -----------------------------------------------------------------------------
 
@@ -26,7 +27,8 @@ def main():
     clear(0)
     print("*"*70 ,"\n")
     print(art.text2art("PB-TIED", font="starwars"))
-    print("\tPassword-Base_Text_&_Image_Encryption-Decryption\n")
+    print("\tPassword-Base_Text_&_Image_Encryption-Decryption")
+    print("\t\t\t\t\t\t- Abhiram-ARS@github\n")
     print("*"*70 ,"\n")
     print("  +=================================+",
           "  |           MAIN MENU             |",
