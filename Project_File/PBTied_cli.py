@@ -3,20 +3,23 @@
 # Author      : https://github.com/Abhiram-ARS
 # Description : This Python-based tool provides a simple yet secure way 
 #               to encrypt and decrypt messages using a password.
-# Version     : Command Line Interface - I (cli-1)
+# Version     : Command Line Interface - I (cli-1) : Windows
 # -----------------------------------------------------------------------------
 
 def clear(n):
     import os
-
+    
     if n==1:
         ent = input('\n\n\n\n[ Press Enter to Continue ]')
     elif n==2:
-        ent = input('\n\n\n\n[ Press Enter to Launch PB-TED ]')
+        ent = input('\n\n\n\n[ Press Enter to Launch PB-TIED ]')
     else:
         pass
 
-    os.system('cls')
+    if(os.name == 'nt'):
+        os.system('cls')
+    else:
+        os.system('clear')
 
 def root():
     clear(2)
