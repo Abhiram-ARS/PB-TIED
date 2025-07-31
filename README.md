@@ -1,51 +1,70 @@
-# PB-TIED : *(Password-Based Text & Image Encryption Decryption System)*
-PB-TIED is a terminal-based Python application designed for secure encryption and decryption of text and image files using password-based symmetric encryption. It leverages cryptographic standards to provide a secure, user-friendly interface for data protection.
+# PB-FED : *(Password-Based File Encryption-Decryption Tool)*
 
-**************************************
+PB-FED is a Python-based GUI application designed for the secure encryption and decryption of **text, image, and binary files** using password-derived cryptographic keys. It provides a **user-friendly graphical interface using Tkinter**, making it accessible to both technical and non-technical users for protecting sensitive data.
 
-## Key Features
-* Text Encryption & Decryption
-    * Supports both direct string input and .txt files.
-    * Uses password-based encryption to secure sensitive textual data.
-    * Option to save the encrypted or decrypted text to a user-defined file.
+---
 
-* Image Encryption & Decryption
-    * Accepts any image file format (e.g., .jpg, .png, .bmp, etc.).
-    * Converts image data to byte streams and encrypts/decrypts them securely.
-    * Outputs the result to a new image file, fully restorable to the original.
+## 🔐 Key Features
 
-* Password-Based Key Derivation
-    * Users provide a password which is hashed using SHA-256 and encoded to form a secure Fernet key.
-    * Ensures that encryption keys are never hardcoded or stored in plaintext.
+### 📄 Text Encryption & Decryption
 
-* Interactive Command-Line Interface
-    * Menu-driven interface for ease of use.
-    * Error handling for invalid inputs and missing files.
-    * Clear prompts and output messages for a seamless experience.
+* Supports direct text input and `.txt` file selection.
+* Encrypts and decrypts using password-derived keys.
+* Allows saving the output to a user-defined file.
 
-**************************************
+### 🖼️ Image Encryption & Decryption
 
-## Algorithms and Libraries Used
+* Works with common image formats (`.jpg`, `.png`, `.bmp`, etc.).
+* Converts image data to byte streams for secure encryption/decryption.
+* Produces a new encrypted image file that can be fully restored.
 
-1. **SHA256** :
+### 📁 Generic File Encryption & Decryption
 
-SHA-256 is a cryptographic hash function that belongs to the SHA-2 family (developed by the NSA and published by NIST). It generates a fixed-length 256-bit (32-byte) hash value from any input data, regardless of the original size. SHA-256 is considered secure against known cryptographic attacks. It has not been broken and is widely used in government and industry-grade applications.
+* Accepts **any file type** (e.g., `.pdf`, `.docx`, `.zip`, `.exe`, etc.).
+* Reads and encrypts/decrypts raw binary data.
+* Maintains data integrity with password-based symmetric encryption.
 
-2. Fernet
+### 🔑 Password-Based Key Derivation
 
-Fernet is a symmetric encryption method included in the Python cryptography package. It ensures that a message encrypted with a key can only be decrypted with the same key, and it also provides message integrity through authentication. It combines AES (Advanced Encryption Standard) and HMAC (Hash-based Message Authentication Code) for secure and authenticated encryption. 
+* User provides a password which is:
 
+  * Hashed using **SHA-256**
+  * Encoded into a **Fernet-compatible key**
+* No hardcoded or stored encryption keys—**fully password-based**.
 
-**************************************
+### 🖥️ GUI-based Interface (Tkinter)
 
-## Libraries Used
-   * **cryptography.fernet** : Encryption and decryption.
-   * **hashlib** : SHA-256 hash function.
-   * **base64** : Encoding binary data.
-   * **os** : File and path checking.
-   * **art** : ASCII banner generator for UI.
+* Intuitive interface with buttons, file browsers, and status labels.
+* Replaces terminal-based interaction with easy-to-navigate forms.
+* Built-in error handling for invalid input, missing files, and wrong passwords.
 
-**************************************
+---
+
+## ⚙️ Algorithms and Cryptographic Principles
+
+### 1. **SHA-256**
+
+* Secure hashing algorithm from the SHA-2 family.
+* Produces a 256-bit hash from any input.
+* Used to derive a strong encryption key from the user’s password.
+
+### 2. **Fernet (from `cryptography`)**
+
+* Implements AES in CBC mode with a HMAC for authentication.
+* Guarantees that encrypted data cannot be tampered with.
+* Ensures symmetric encryption and integrity checking.
+
+---
+
+## 📚 Libraries Used
+
+* **`cryptography.fernet`** : For AES-based symmetric encryption and HMAC-based integrity.
+* **`hashlib`** : For hashing passwords with SHA-256.
+* **`base64`** : For encoding the hashed password into a Fernet-compatible format.
+* **`os`** : For file handling and path validation.
+* **`tkinter`** : For building the graphical user interface (GUI).
+* **`filedialog` & `messagebox` (from tkinter)** : For interactive file selection and alert messages.
+* **`art`** *(optional)* : For ASCII banner generation (if reused in GUI splash).
 
 ## Liscense 
 
